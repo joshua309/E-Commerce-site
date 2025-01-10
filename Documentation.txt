@@ -1,0 +1,25 @@
+Design Fce
+For the design of this e-commerce website, I aimed to create a clean, professional, and 
+modern layout suitable for young professionals. I chose a minimalistic color scheme with 
+light background colors (e.g., #f7f2f2) to ensure the website feels fresh and easy on the eyes. 
+I used dark shades for the header and footer to create contrast and to highlight important sections
+like navigation and cart. The layout is responsive, ensuring the website adapts well to mobile and desktop devices.
+
+JavaScript Features:
+
+I implemented several interactive features using JavaScript to enhance the user experience. These include:
+
+Dynamic cart functionality: Users can add products to the cart, view their cart.
+The cart is saved in localStorage so that data persists across page reloads.
+Cart count update: The cart icon dynamically updates with the number of items in the cart, 
+providing real-time feedback to users.
+Challenges and Solutions:
+
+One challenge I faced was managing cart data using localStorage. Initially, I had issues with data not 
+persisting across sessions. To resolve this, I made sure to consistently update localStorage after any change to the cart, ensuring the cart data is reliably stored and retrieved on page load.
+
+Deployment Process:
+
+I deployed the website using GitHub Pages for easy access and sharing. The steps involved initializing a Git repository,
+ pushing the project files to GitHub, and using the "GitHub Pages" feature to serve the files from the repository.
+

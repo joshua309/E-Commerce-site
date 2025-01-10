@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Home - Young Professionals E-Commerce</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    
+<body>
+<header>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html">Cart</a></li>
+        </ul>
+    </nav>
+    <div class="cart-icon">
+        <a href="cart.html">
+            <img src="C:\Projects\Final PROJECT\Assets\cart.png" alt="Cart">
+            <span id="cart-count">0</span>
+        </a>
+    </div>
+</header>
+
+<main>
+    <section class="welcome"> 
+    <h1>Welcome to Our Young Professionals E-Commerce</h1> 
+    <p>Your one-stop destination for high-quality products tailored for young professionals. We offer a wide range of products to enhance your productivity and lifestyle.</p> </section>
+
+    <section class="features">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <!-- Product Cards (20 items) -->
+            <div class="product-card">
+                <img src="C:\Projects\Final PROJECT\Assets\laptop bag.jpeg" alt="Stylish Laptop Bag">
+                <p>Stylish Laptop Bag</p>
+                <p class="price">KSh 1399</p>
+                <input type="number" id="quantity-1" min="1" value="1" class="quantity-input">
+                <button class="buy-now" onclick="addToCart('Stylish Laptop Bag', 100, document.getElementById('quantity-1').value)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="C:\Projects\Final PROJECT\Assets\phone.jpeg" alt="Premium Smartphone">
+                <p>Premium Iphone</p>
+                <p class="price">KSh 299,999</p>
+                <input type="number" id="quantity-2" min="1" value="1" class="quantity-input">
+                <button class="buy-now" onclick="addToCart('Premium Smartphone', 200, document.getElementById('quantity-2').value)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="C:\Projects\Final PROJECT\Assets\chair.jpeg" alt="Ergonomic Office Chair">
+                <p>Ergonomic Office Chair</p>
+                <p class="price">KSh 12999</p>
+                <input type="number" id="quantity-3" min="1" value="1" class="quantity-input">
+                <button class="buy-now" onclick="addToCart('Ergonomic Office Chair', 300, document.getElementById('quantity-3').value)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="C:\Projects\Final PROJECT\Assets\keyboard + mouse.jpeg" alt="Wireless Keyboard and Mouse">
+                <p>Wireless Keyboard and Mouse</p>
+                <p class="price">KSh 1499</p>
+                <input type="number" id="quantity-4" min="1" value="1" class="quantity-input">
+                <button class="buy-now" onclick="addToCart('Wireless Keyboard and Mouse', 400, document.getElementById('quantity-4').value)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="C:\Projects\Final PROJECT\Assets\headphone.jpeg" alt="Noise-Canceling Headphones">
+                <p>Noise-Canceling Headphones</p>
+                <p class="price">KSh 1500</p>
+                <input type="number" id="quantity-5" min="1" value="1" class="quantity-input">
+                <button class="buy-now" onclick="addToCart('Noise-Canceling Headphones', 500, document.getElementById('quantity-5').value)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="C:\Projects\Final PROJECT\Assets\smart watch.jpeg" alt="Smartwatch">
+                <p>Smartwatch</p>
+                <p class="price">KSh 1799</p>
+                <input type="number" id="quantity-6" min="1" value="1" class="quantity-input">
+                <button class="buy-now" onclick="addToCart('Smartwatch', 600, document.getElementById('quantity-6').value)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="C:\Projects\Final PROJECT\Assets\portable charger.jpeg" alt="Portable Charger">
+                <p>Portable Charger</p>
+                <p class="price">KSh 1699</p>
+                <input type="number" id="quantity-7" min="1" value="1" class="quantity-input">
+                <button class="buy-now" onclick="addToCart('Portable Charger', 700, document.getElementById('quantity-7').value)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="C:\Projects\Final PROJECT\Assets\Bt speaker.jpeg" alt="Bluetooth Speaker">
+                <p>Bluetooth Speaker</p>
+                <p class="price">KSh 1199</p>
+                <input type="number" id="quantity-8" min="1" value="1" class="quantity-input">
+                <button class="buy-now" onclick="addToCart('Bluetooth Speaker', 800, document.getElementById('quantity-8').value)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="C:\Projects\Final PROJECT\Assets\back pack.jpeg" alt="Travel Backpack">
+                <p>Travel Backpack</p>
+                <p class="price">KSh 1900</p>
+                <input type="number" id="quantity-9" min="1" value="1" class="quantity-input">
+                <button class="buy-now" onclick="addToCart('Travel Backpack', 900, document.getElementById('quantity-9').value)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="C:\Projects\Final PROJECT\Assets\earpods.jpeg" alt="Noise-Canceling Earbuds">
+                <p>Noise-Canceling Earbuds</p>
+                <p class="price">KSh 1000</p>
+                <input type="number" id="quantity-10" min="1" value="1" class="quantity-input">
+                <button class="buy-now" onclick="addToCart('Noise-Canceling Earbuds', 1000, document.getElementById('quantity-10').value)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="C:\Projects\Final PROJECT\Assets\smartWatch.jpeg" alt="Smart Watch">
+                <p>Smart Watch</p>
+                <p class="price">KSh 3500</p>
+                <input type="number" id="quantity-11" min="1" value="1" class="quantity-input">
+                <button class="buy-now" onclick="addToCart('Smart Watch', 1100, document.getElementById('quantity-11').value)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="C:\Projects\Final PROJECT\Assets\portable charger.jpeg" alt="Portable Charger">
+                <p>Portable Charger</p>
+                <p class="price">KSh 1200</p>
+                <input type="number" id="quantity-12" min="1" value="1" class="quantity-input">
+                <button class="buy-now" onclick="addToCart('Portable Charger', 1200, document.getElementById('quantity-12').value)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="C:\Projects\Final PROJECT\Assets\keyboard.jpeg" alt="Bluetooth Keyboard">
+                <p>Bluetooth Keyboard</p>
+                <p class="price">KSh 1300</p>
+                <input type="number" id="quantity-13" min="1" value="1" class="quantity-input">
+                <button class="buy-now" onclick="addToCart('Bluetooth Keyboard', 1300, document.getElementById('quantity-13').value)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="C:\Projects\Final PROJECT\Assets\lapstand.jpeg" alt="Laptop Stand">
+                <p>Laptop Stand</p>
+                <p class="price">KSh 1400</p>
+                <input type="number" id="quantity-14" min="1" value="1" class="quantity-input">
+                <button class="buy-now" onclick="addToCart('Laptop Stand', 1400, document.getElementById('quantity-14').value)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                 <img src="C:\Projects\Final PROJECT\Assets\headphones.jpeg" alt="Noise-Canceling Headphones"> 
+                <p>Noise-Canceling Headphones</p>
+                 <p class="price">KSh 1500</p> 
+                 <input type="number" id="quantity-5" min="1" value="1" class="quantity-input"> 
+                 <button class="buy-now" onclick="addToCart('Noise-Canceling Headphones', 500, document.getElementById('quantity-15').value)">Add to Cart</button> 
+                 </div>
+                 <div class="product-card">
+                    <img src="C:\Projects\Final PROJECT\Assets\download.jpeg" alt="Laptop ">
+                    <p>Laptop</p>
+                    <p class="price">KSh 35000</p>
+                    <input type="number" id="quantity-16" min="1" value="1" class="quantity-input">
+                    <button class="buy-now" onclick="addToCart('Laptop ', 35000, document.getElementById('quantity-16').value)">Add to Cart</button>
+                </div> 
+                </section> 
+                </main> 
+                <footer>
+                    <p>&copy; 2025 Young Professionals E-Commerce. All rights reserved.</p>
+                    <p>Visit us at: <a href="https://www.youngprofessionals.com">www.youngprofessionals.com</a></p>
+                    <p>Follow us on:</p>
+                    <div class="social-icons">
+                        <a href="https://twitter.com/youngprofessionals" target="_blank" class="fa fa-twitter"></a>
+                        <a href="https://facebook.com/youngprofessionals" target="_blank" class="fa fa-facebook"></a>
+                        <a href="https://instagram.com/youngprofessionals" target="_blank" class="fa fa-instagram"></a>
+                    </div>
+                    <p>Contact us at: <a href="kikojoshua238@gmail.com">kikojoshua238@gmail.com</a></p>
+                </footer>
+                
+                
+                <script src="script.js"></script>
+             </body>
+              </html>
