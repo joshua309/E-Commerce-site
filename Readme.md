@@ -21,3 +21,6 @@ The website uses a modern, clean layout suitable for young professionals. I chos
 1. Clone the repository to your local machine:
    ```bash
    git clone https://github.com/your-username/young-professionals-e-commerce.git
+
+## Deployment
+The project is deployed on Netlify. You can access it here: https://stupendous-twilight-2616fe.netlify.app/
